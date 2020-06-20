@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <!--Sliding effect-->
+    <link rel="shortcut icon" type="mee/png"
+        href="https://cdn.glitch.com/f04206de-f6ee-4045-86a5-3aa2649f233f%2Fmee.png?v=1588347082200.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&amp;display=swap" rel="stylesheet">
+    <title>Way_to_learn_"IT"</title>
+</head>
+
+<body>
+
+
+    <form method="POST" validation="true" action="#" enctype="multipart/form-data" name="form" id="f0">
+
+        <div class="regblock animate__animated animate__fadeIn" id="anim">
+            <div class="form-box">
+
+                <span class="login-text">Register</span>
+
+                <input id="uname" type="text" name="username" minlength="8" maxlength="15" placeholder="Username"
+                    required />
+
+                <input id="email" type="email" name="email" placeholder="Email" required />
+
+                <input id="psw" type="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    placeholder="password" />
+
+                <input id="cpsw" type="password" name="confirm-password" placeholder="Confirm password" required />
+
+                <input type="submit" id="login" value="Register">
+                <input type="submit" name="otp" id="cancel" value="Already user? Login">
+
+            </div>
+
+        </div>
+    </form>
+
+    </form>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            margin: 0;
+
+
+        }
+
+        .regblock {
+            text-align: center;
+            font-family: 'Courgette', cursive;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            margin-top: 85px;
+            border: none;
+        }
+
+        .form-box {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 20px 30px 30px 30px;
+            margin: 20px;
+            border-radius: 90% 10% 89% 11% / 20% 84% 16% 80%;
+            box-shadow: 3px 3px 10px #888888, -10px -10px 30px #ffffff;
+            opacity: 100%;
+
+        }
+
+
+
+        input[type="password"],
+        input[type="email"],
+        input[type="text"],
+        input[type="number"] {
+            width: 85%;
+            font-family: 'Courgette', cursive;
+            height: 35px;
+            margin-top: 20px;
+            padding-left: 38px;
+            font-size: 15px;
+            border-radius: 10px;
+            box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.336), -1px 1px 1px #8e9091;
+            border: none;
+            /* border: 0.6px solid #8e9091; */
+            outline: none;
+            margin-left: 7%;
+
+        }
+
+        .login-text {
+            padding: 15px;
+            padding-right: -10px;
+            max-width: 190px;
+            border-radius: 33% 67% 0% 100% / 31% 64% 36% 69%;
+            box-shadow: 1px 1px 3px #0c011d75, -5px -5px 10px #ffffff;
+            margin-top: 10px;
+            margin-left: 35%;
+            font-weight: bold;
+            font-size: 25px;
+            color: rgb(7, 1, 22);
+
+        }
+
+        #login {
+            font-family: 'Courgette', cursive;
+            padding: 10px 15px 10px 15px;
+            background-color: #888888;
+            border: 0;
+            color: white;
+            margin-top: 40px;
+
+            width: 180px;
+            border-radius: 4px;
+            box-shadow: inset 10px 10px 20px #0c011d75, -1px -1px 3px #d6a8a8;
+            border-radius: 52% 48% 25% 75% / 53% 69% 31% 47%;
+        }
+
+        #cancel {
+            font-family: 'Courgette', cursive;
+            padding: 10px 15px 10px 15px;
+            margin-top: 10px;
+
+            width: 180px;
+            background-color: #ffe8df;
+            color: rgb(19, 4, 4);
+            text-decoration: none;
+            border: 0px;
+            border-radius: 4px;
+            box-shadow: inset 10px 10px 20px #0c011d75, -1px -1px 3px #d6a8a8;
+            border-radius: 90% 10% 89% 11% / 20% 84% 16% 80%;
+
+        }
+
+        #login:hover {
+            background-color: #ffe8df;
+            border-radius: 90% 10% 89% 11% / 20% 84% 16% 80%;
+            color: rgb(19, 4, 4);
+            box-shadow: outset 10px 10px 20px #ffffff, -1px -1px 3px #d6a8a8;
+        }
+
+        #cancel:hover {
+            border-radius: 52% 48% 25% 75% / 53% 69% 31% 47%;
+            background-color: #888888;
+            color: #ffffff;
+        }
+
+
+        @media screen and (min-width: 650px) {
+
+            #login,
+            #cancel {
+                width: 233px;
+                margin-left: 30%;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
